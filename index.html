@@ -1,0 +1,467 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOODVERSE — Taste of Indonesia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- OPENING INTRO -->
+    <div class="intro-screen" id="introScreen" aria-hidden="true">
+        <div class="intro-content">
+            <div class="intro-mark">F<span>.</span></div>
+            <p class="intro-overline">A JOURNEY THROUGH INDONESIA</p>
+            <h2>FOOD<span>VERSE</span></h2>
+            <p class="intro-tagline">Menyajikan cerita di setiap rasa.</p>
+            <div class="intro-progress"><span></span></div>
+            <p class="intro-loading">PREPARING YOUR EXPERIENCE</p>
+        </div>
+        <div class="intro-decoration intro-decoration-one"></div>
+        <div class="intro-decoration intro-decoration-two"></div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="#home" class="logo">FOOD<span>VERSE.</span></a>
+
+        <div class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#nusantara">Nusantara</a>
+            <a href="#about">About</a>
+        </div>
+
+        <a href="#menu" class="nav-button">Explore Food ↗</a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">
+            ☰
+        </button>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero" id="home">
+        <div class="hero-bg-circle"></div>
+
+        <div class="hero-content">
+            <span class="eyebrow reveal">✦ THE TASTE OF INDONESIA</span>
+
+            <h1 class="reveal">
+                Discover The
+                <span>Real Taste</span>
+                Of Indonesia.
+            </h1>
+
+            <p class="hero-description reveal">
+                Dari Sabang sampai Merauke, temukan kekayaan rasa,
+                cerita, dan kelezatan kuliner Nusantara.
+            </p>
+
+            <div class="hero-actions reveal">
+                <a href="#menu" class="primary-button">Explore Menu ↗</a>
+                <a href="#about" class="text-button">Discover More ↓</a>
+            </div>
+
+            <div class="hero-stats reveal">
+                <div>
+                    <h3 class="counter" data-target="100">0</h3>
+                    <p>Food Choices</p>
+                </div>
+                <div>
+                    <h3 class="counter" data-target="34">0</h3>
+                    <p>Provinces</p>
+                </div>
+                <div>
+                    <h3 class="counter" data-target="100">0</h3>
+                    <p>% Indonesian</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-visual reveal">
+            <div class="hero-image-wrap">
+                <img
+                    src="images/nasi-goreng.jpg"
+                    alt="Hidangan makanan"
+                >
+            </div>
+
+            <div class="floating-card floating-top">
+                <span>🍜</span>
+                <div>
+                    <strong>Authentic Taste</strong>
+                    <small>Made with love</small>
+                </div>
+            </div>
+
+            <div class="floating-card floating-bottom">
+                <span>❤️</span>
+                <div>
+                    <strong>Indonesian Food</strong>
+                    <small>Full of culture</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll">SCROLL TO EXPLORE ↓</div>
+    </header>
+
+    <!-- MARQUEE -->
+    <section class="marquee">
+        <div class="marquee-track">
+            <span>INDONESIAN FOOD ✳</span>
+            <span>AUTHENTIC TASTE ✳</span>
+            <span>EXPLORE NUSANTARA ✳</span>
+            <span>LOCAL FLAVORS ✳</span>
+            <span>INDONESIAN FOOD ✳</span>
+            <span>AUTHENTIC TASTE ✳</span>
+            <span>EXPLORE NUSANTARA ✳</span>
+            <span>LOCAL FLAVORS ✳</span>
+        </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="menu-section section-padding" id="menu">
+        <div class="section-heading reveal">
+            <span class="eyebrow">✦ OUR COLLECTION</span>
+            <h2>Explore Our <span>Popular Foods.</span></h2>
+            <p>Berbagai hidangan khas Indonesia yang wajib kamu coba.</p>
+        </div>
+
+        <div class="menu-controls reveal">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">All Foods</button>
+                <button class="filter-btn" data-category="main">Main Course</button>
+                <button class="filter-btn" data-category="snack">Snacks</button>
+                <button class="filter-btn" data-category="soup">Soups</button>
+            </div>
+
+            <input
+                type="text"
+                id="foodSearch"
+                placeholder="Cari makanan..."
+                aria-label="Cari makanan"
+            >
+        </div>
+
+        <div class="food-grid" id="foodGrid">
+
+            <article class="food-card reveal" data-category="main" data-name="rendang">
+                <div class="food-image">
+                    <img src="images/rendang.jpg" alt="Rendang">
+                    <span class="food-tag">Popular</span>
+                </div>
+                <div class="food-info">
+                    <span class="food-origin">WEST SUMATRA</span>
+                    <h3>Rendang</h3>
+                    <p>Daging dengan rempah khas Minangkabau.</p>
+                    <div class="food-bottom">
+                        <strong>Rich & Spicy</strong>
+                        <span>01 ↗</span>
+                    </div>
+                    <button class="food-detail-btn" type="button" data-food="rendang">Lihat detail <span>↗</span></button>
+                </div>
+            </article>
+
+            <article class="food-card reveal" data-category="main" data-name="nasi goreng">
+                <div class="food-image">
+                    <img src="images/nasi-goreng.jpg" alt="Nasi Goreng">
+                </div>
+                <div class="food-info">
+                    <span class="food-origin">INDONESIA</span>
+                    <h3>Nasi Goreng</h3>
+                    <p>Nasi goreng dengan bumbu dan rempah pilihan.</p>
+                    <div class="food-bottom">
+                        <strong>Classic Favorite</strong>
+                        <span>02 ↗</span>
+                    </div>
+                    <button class="food-detail-btn" type="button" data-food="nasi-goreng">Lihat detail <span>↗</span></button>
+                </div>
+            </article>
+
+            <article class="food-card reveal" data-category="main" data-name="sate ayam">
+                <div class="food-image">
+                    <img src="images/sate-ayam.jpg" alt="Sate">
+                </div>
+                <div class="food-info">
+                    <span class="food-origin">JAVA</span>
+                    <h3>Sate Ayam</h3>
+                    <p>Potongan ayam panggang dengan saus kacang.</p>
+                    <div class="food-bottom">
+                        <strong>Smoky Flavor</strong>
+                        <span>03 ↗</span>
+                    </div>
+                    <button class="food-detail-btn" type="button" data-food="sate-ayam">Lihat detail <span>↗</span></button>
+                </div>
+            </article>
+
+            <article class="food-card reveal" data-category="soup" data-name="soto ayam">
+                <div class="food-image">
+                    <img src="images/soto-ayam.jpg" alt="Soto Ayam">
+                </div>
+                <div class="food-info">
+                    <span class="food-origin">EAST JAVA</span>
+                    <h3>Soto Ayam</h3>
+                    <p>Sup ayam hangat dengan kuah rempah.</p>
+                    <div class="food-bottom">
+                        <strong>Warm & Fresh</strong>
+                        <span>04 ↗</span>
+                    </div>
+                    <button class="food-detail-btn" type="button" data-food="soto-ayam">Lihat detail <span>↗</span></button>
+                </div>
+            </article>
+
+            <article class="food-card reveal" data-category="snack" data-name="martabak">
+                <div class="food-image">
+                    <img src="images/martabak.jpg" alt="Martabak">
+                </div>
+                <div class="food-info">
+                    <span class="food-origin">INDONESIA</span>
+                    <h3>Martabak</h3>
+                    <p>Camilan populer dengan berbagai isian.</p>
+                    <div class="food-bottom">
+                        <strong>Sweet & Savory</strong>
+                        <span>05 ↗</span>
+                    </div>
+                    <button class="food-detail-btn" type="button" data-food="martabak">Lihat detail <span>↗</span></button>
+                </div>
+            </article>
+
+            <article class="food-card reveal" data-category="main" data-name="ayam bakar">
+                <div class="food-image">
+                    <img src="images/ayam-bakar.jpg" alt="Ayam Bakar">
+                </div>
+                <div class="food-info">
+                    <span class="food-origin">INDONESIA</span>
+                    <h3>Ayam Bakar</h3>
+                    <p>Ayam dengan bumbu khas yang dibakar.</p>
+                    <div class="food-bottom">
+                        <strong>Grilled Flavor</strong>
+                        <span>06 ↗</span>
+                    </div>
+                    <button class="food-detail-btn" type="button" data-food="ayam-bakar">Lihat detail <span>↗</span></button>
+                </div>
+            </article>
+
+            <article class="food-card reveal" data-category="snack" data-name="pempek">
+                <div class="food-image">
+                    <img src="images/pempek.jpg" alt="Pempek">
+                </div>
+                <div class="food-info">
+                    <span class="food-origin">SOUTH SUMATRA</span>
+                    <h3>Pempek</h3>
+                    <p>Olahan ikan dengan kuah cuko khas Palembang.</p>
+                    <div class="food-bottom">
+                        <strong>Sweet & Sour</strong>
+                        <span>07 ↗</span>
+                    </div>
+                    <button class="food-detail-btn" type="button" data-food="pempek">Lihat detail <span>↗</span></button>
+                </div>
+            </article>
+
+            <article class="food-card reveal" data-category="soup" data-name="rawon">
+                <div class="food-image">
+                    <img src="images/rawon.jpg" alt="Rawon">
+                </div>
+                <div class="food-info">
+                    <span class="food-origin">EAST JAVA</span>
+                    <h3>Rawon</h3>
+                    <p>Sup daging dengan kuah hitam khas kluwek.</p>
+                    <div class="food-bottom">
+                        <strong>Deep Flavor</strong>
+                        <span>08 ↗</span>
+                    </div>
+                    <button class="food-detail-btn" type="button" data-food="rawon">Lihat detail <span>↗</span></button>
+                </div>
+            </article>
+
+        </div>
+
+        <p class="empty-message" id="emptyMessage">Makanan tidak ditemukan. Coba kata lain!</p>
+    </section>
+
+    <!-- NUSANTARA -->
+    <section class="nusantara-section section-padding" id="nusantara">
+        <div class="section-heading reveal">
+            <span class="eyebrow">✦ FROM SABANG TO MERAUKE</span>
+            <h2>A Journey Through <span>Nusantara.</span></h2>
+            <p>Setiap daerah punya cerita dan cita rasa yang berbeda.</p>
+        </div>
+
+        <div class="region-grid">
+            <article class="region-card region-one reveal">
+                <img src="images/sumatra.jpg" alt="Kuliner khas Sumatra">
+                <div class="region-overlay">
+                    <span>01 — SUMATRA</span>
+                    <h3>Bold & Spicy</h3>
+                    <p>Rendang, Pempek, Mie Aceh</p>
+                </div>
+            </article>
+
+            <article class="region-card region-two reveal">
+                <img src="images/jawa.jpg" alt="Kuliner khas Jawa">
+                <div class="region-overlay">
+                    <span>02 — JAVA</span>
+                    <h3>Sweet & Savory</h3>
+                    <p>Gudeg, Rawon, Sate</p>
+                </div>
+            </article>
+
+            <article class="region-card region-three reveal">
+                <img src="images/bali.jpg" alt="Kuliner khas Bali">
+                <div class="region-overlay">
+                    <span>03 — BALI</span>
+                    <h3>Fresh & Exotic</h3>
+                    <p>Ayam Betutu, Sate Lilit</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- FEATURED -->
+    <section class="featured-section">
+        <div class="featured-content reveal">
+            <span class="eyebrow">✦ FOOD OF THE DAY</span>
+            <h2>A Legendary Taste.<br><span>Rendang.</span></h2>
+            <p>
+                Perpaduan daging, santan, dan rempah-rempah
+                yang dimasak perlahan hingga menghasilkan cita rasa
+                khas yang kaya dan istimewa.
+            </p>
+            <a href="#menu" class="primary-button">Discover More ↗</a>
+        </div>
+
+        <div class="featured-image reveal">
+            <img src="images/rendang.jpg" alt="Featured food">
+            <div class="featured-sticker">100%<br>LOCAL<br>FLAVOR</div>
+        </div>
+    </section>
+
+    <!-- DESSERT -->
+    <section class="dessert-section section-padding">
+        <div class="section-heading reveal">
+            <span class="eyebrow">✦ SWEET MOMENTS</span>
+            <h2>Life Is Better With <span>Dessert.</span></h2>
+            <p>Akhiri petualangan rasa dengan jajanan manis Nusantara.</p>
+        </div>
+
+        <div class="dessert-grid">
+            <article class="dessert-card reveal">
+                <img src="images/klepon.jpg" alt="Klepon">
+                <div>
+                    <span>01 / SWEET</span>
+                    <h3>Klepon</h3>
+                    <p>Kue tradisional dengan gula merah.</p>
+                </div>
+            </article>
+
+            <article class="dessert-card reveal">
+                <img src="images/donat.jpg" alt="Donat">
+                <div>
+                    <span>02 / SWEET</span>
+                    <h3>Donut</h3>
+                    <p>Camilan manis untuk menemani harimu.</p>
+                </div>
+            </article>
+
+            <article class="dessert-card reveal">
+                <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=700" alt="Dessert">
+                <div>
+                    <span>03 / SWEET</span>
+                    <h3>Ice Cream</h3>
+                    <p>Sensasi dingin dan manis yang menyegarkan.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-section section-padding" id="about">
+        <div class="about-image reveal">
+            <img src="images/nasi-goreng.jpg" alt="Indonesian food">
+            <div class="about-label">A TASTE<br>OF CULTURE.</div>
+        </div>
+
+        <div class="about-content reveal">
+            <span class="eyebrow">✦ OUR STORY</span>
+            <h2>More Than Just <span>Food.</span></h2>
+            <p>
+                FOODVERSE adalah ruang untuk mengenal kekayaan
+                kuliner Indonesia. Kami percaya bahwa setiap hidangan
+                punya cerita, budaya, dan tradisi yang layak dikenal.
+            </p>
+            <p>
+                Dari makanan sederhana hingga hidangan legendaris,
+                semuanya menjadi bagian dari keindahan Nusantara.
+            </p>
+            <a href="#home" class="primary-button">Back To Top ↑</a>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="cta-circle"></div>
+        <div class="cta-content reveal">
+            <span>✦ YOUR FOOD ADVENTURE STARTS HERE</span>
+            <h2>Let's Taste<br>The <i>Wonder</i> Of Indonesia.</h2>
+            <a href="#menu" class="cta-button">Explore FOODVERSE ↗</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div>
+                <a href="#home" class="logo footer-logo">FOOD<span>VERSE.</span></a>
+                <p>Discover the wonderful taste of Indonesia.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#nusantara">Nusantara</a>
+                <a href="#about">About</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 FOODVERSE. Made with ♥ in Indonesia.</p>
+            <a href="#home">BACK TO TOP ↑</a>
+        </div>
+    </footer>
+
+
+    <!-- FOOD DETAIL MODAL -->
+    <div class="food-modal" id="foodModal" aria-hidden="true">
+        <div class="food-modal-backdrop" data-close-modal></div>
+        <section class="food-modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalFoodName">
+            <button class="food-modal-close" id="closeFoodModal" type="button" aria-label="Tutup detail">&times;</button>
+            <div class="food-modal-image-wrap">
+                <img id="modalFoodImage" src="" alt="">
+                <span class="food-modal-kicker">FOODVERSE • FOOD STORY</span>
+            </div>
+            <div class="food-modal-content">
+                <span class="food-modal-origin" id="modalFoodOrigin"></span>
+                <h2 id="modalFoodName"></h2>
+                <p class="food-modal-description" id="modalFoodDescription"></p>
+                <div class="food-modal-details">
+                    <div><span class="detail-label">BAHAN UTAMA</span><p id="modalFoodIngredients"></p></div>
+                    <div><span class="detail-label">CITA RASA</span><p id="modalFoodTaste"></p></div>
+                    <div><span class="detail-label">CERITA SINGKAT</span><p id="modalFoodStory"></p></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <button id="backToTop" aria-label="Kembali ke atas">↑</button>
+
+    <div class="toast" id="toast">Welcome to FOODVERSE!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
